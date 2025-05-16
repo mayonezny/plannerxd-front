@@ -1,0 +1,23 @@
+{
+    // 1) Форматировать каждый раз при сохранении
+    "editor.formatOnSave": true,
+  
+    // 2) Одновременно запускать ВСЕ auto-fix’ы ESLint
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "always",
+      "source.fixAll.eslint": "always"
+    },
+  
+    // 3) Сказать VS Code, какие файлы отдавать линтеру
+    "eslint.validate": [
+      "javascript",
+      "javascriptreact",
+      "typescript",
+      "typescriptreact"
+    ],
+  
+    // 4) Не трогать Prettier, если в проекте нет .prettierrc —
+    //    спасёт, когда откроешь чужой репо без конфига
+    "prettier.requireConfig": true
+  }
+  
